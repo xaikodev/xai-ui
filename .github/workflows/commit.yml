@@ -2,8 +2,8 @@ name: Commits Version Increase
 on:
   push:
     branches-ignore:
-      - main
-
+      - '*'
+      - '!master'
 jobs:
   version:
     name: Create new patch version
@@ -24,4 +24,4 @@ jobs:
         run: npm version patch
 
       - name: Push new version tag to repository
-        run: git add . && git commit -a -m "version increase" && git push origin ${{ github.ref_name }}
+        run: git push origin ${{ github.ref_name }} --tags
