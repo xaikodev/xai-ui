@@ -10,6 +10,7 @@ export const Button = (props: ButtonProps) => {
 }
 
 const StyledButton = styled.button`
+  color: #ffffff;
   border-radius: 5px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
