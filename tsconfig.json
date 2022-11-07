@@ -17,9 +17,8 @@
     "skipLibCheck": true,
      "esModuleInterop": true ,
      "declarationMap": true,
-    "baseUrl": ".",
      "paths": {
-      "react-vite-library": [ "src/components/index.ts" ]
+      "xai-ui": [ "./src/components/index.ts" ]
     },
     "typeRoots": [
       "node_modules/@types",
