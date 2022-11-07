@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
+    "preview": "previewjs",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "lint:fix": "eslint --fix src/**/*.{jsx,ts,tsx}",
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
@@ -37,6 +37,7 @@
   "module": "./dist/xai-ui.es.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
+    "@previewjs/cli": "^1.16.2",
     "@types/node": "^18.7.6",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
