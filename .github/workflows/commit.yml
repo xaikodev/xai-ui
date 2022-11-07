@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
       - run: |
           git config user.name xaikodev
           git config user.email xaikodev@gmail.com
@@ -25,6 +25,7 @@ jobs:
         
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9.1.1
+
 
       - name: Push new version tag to repository
         run: git push origin ${{ github.ref_name }} --tags
