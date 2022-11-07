@@ -497,6 +497,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@previewjs/cli@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@previewjs/cli/-/cli-1.16.2.tgz#92c0f74576e6e2012edbfa2597d5c5b68a879542"
+  integrity sha512-nuvznEKot0rstxuY1L7b1yhu5+LIZE0tMJCfziei4B1Ea+4TyNty94EzSFC8gqW8Bcj3zz7CRDQzB0SiRWqBuA==
+
 "@rollup/pluginutils@4.1.1":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.1.1.tgz#1d4da86dd4eded15656a57d933fda2b9a08d47ec"
