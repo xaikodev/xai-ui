@@ -1,9 +1,10 @@
 name: Publish package on NPM
 
 on:
-  release:
-    types: [created]
-
+  workflow_run:
+    workflows: [Minor Increase, Generate tag version]
+    types:
+      - completed
 jobs:
   build:
     runs-on: ubuntu-latest
