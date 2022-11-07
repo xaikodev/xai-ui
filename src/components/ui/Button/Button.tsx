@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 export type ButtonProps = {
   text: string
+  color: string
+  background: string
+
+  size: 'xs' | 'sm' | 'm' | 'lg' | 'xlg' | 'full'
 }
 
 export const Button = (props: ButtonProps) => {
@@ -10,14 +14,16 @@ export const Button = (props: ButtonProps) => {
 }
 
 const StyledButton = styled.button`
-  color: #fffffe;
-  border-radius: 5px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  min-width: 200px;
+  min-height: 40px;
+  color: linear-gradient(24deg, rgb(2, 0, 36) 0%, rgb(9, 121, 10) 35%, rgb(0, 255, 79) 100%);
+  border-radius: 8px;
+  border: 1px solid
+    linear-gradient(24deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 10, 1) 35%, rgba(0, 255, 79, 1) 100%);
+  font-size: 1rem;
+  font-weight: 800;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #46464693;
   cursor: pointer;
   transition: border-color 0.25s;
   &:hover {
