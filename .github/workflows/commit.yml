@@ -1,0 +1,27 @@
+name: Commits Version Increase
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  version:
+    name: Create new patch version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: main
+      - run: |
+          git config user.name xaikodev
+          git config user.email xaikodev@gmail.com
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - name: Create new patch version
+        run: npm version patch
+
+      - name: Push new version tag to repository
+        run: git push origin ${GITHUB_REF##*/} --tags
