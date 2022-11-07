@@ -1,6 +1,6 @@
 name: Minor Increase
 on:
-  pull_request:
+  push:
     branches:
       - main
 
