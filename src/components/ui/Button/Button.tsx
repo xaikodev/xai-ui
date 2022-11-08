@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export type Size = 'xs' | 'sm' | 'm' | 'lg' | 'xlg' | 'full'
+export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xlg' | 'full'
 
 export type Roundness = 'clean' | 'pro' | 'rounded'
 
@@ -27,7 +27,7 @@ const convertSize = (s: Size): number => {
     case 'sm':
       return 16
 
-    case 'm':
+    case 'md':
       return 20
 
     case 'lg':
