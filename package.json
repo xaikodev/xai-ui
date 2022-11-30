@@ -79,5 +79,8 @@
     "url": "https://github.com/xaikodev/xai-ui/issues"
   },
   "homepage": "https://github.com/xaikodev/xai-ui#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jotai": "^1.10.0"
+  }
 }
