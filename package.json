@@ -1,14 +1,14 @@
 {
   "name": "xai-ui",
   "private": false,
-  "version": "0.9.0",
+  "version": "0.9.6",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "previewjs",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
-    "lint:fix": "eslint --fix src/**/*.{jsx,ts,tsx}",
+    "lint:fix": "eslint --fix src/**/*.{tsx,ts}",
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
     "prepare": "husky install"
   },
@@ -79,5 +79,9 @@
     "url": "https://github.com/xaikodev/xai-ui/issues"
   },
   "homepage": "https://github.com/xaikodev/xai-ui#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jotai": "^1.10.0",
+    "nanoid": "^4.0.0"
+  }
 }
