@@ -1,5 +1,3 @@
-import './App.css'
-
 import { Button } from './components'
 
 function App() {
