@@ -5,11 +5,11 @@ export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xlg' | 'full'
 export type Roundness = 'clean' | 'pro' | 'rounded'
 
 export type ButtonProps = {
-  text: string
-  color: string
-  background: string
-  size: Size
-  round: Roundness
+  text?: string
+  color?: string
+  background?: string
+  size?: Size
+  round?: Roundness
 }
 
 type StyledButtonProps = {
