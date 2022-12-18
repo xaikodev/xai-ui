@@ -1,7 +1,7 @@
 {
   "name": "xai-ui",
   "private": false,
-  "version": "0.9.6",
+  "version": "0.10.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
