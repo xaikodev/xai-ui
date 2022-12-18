@@ -81,6 +81,7 @@
   "homepage": "https://github.com/xaikodev/xai-ui#readme",
   "license": "MIT",
   "dependencies": {
-    "jotai": "^1.10.0"
+    "jotai": "^1.10.0",
+    "nanoid": "^4.0.0"
   }
 }
