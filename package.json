@@ -54,7 +54,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^8.0.1",
+    "jotai": "^1.10.0",
     "lint-staged": "^13.0.3",
+    "nanoid": "^4.0.0",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -63,9 +65,7 @@
     "vite": "^3.1.0",
     "vite-plugin-dts": "^1.4.1",
     "vite-plugin-linter": "^1.2.0",
-    "vite-tsconfig-paths": "^3.5.0",
-    "jotai": "^1.10.0",
-    "nanoid": "^4.0.0"
+    "vite-tsconfig-paths": "^3.5.0"
   },
   "peerDependencies": {
     "react": "18.2.0",
@@ -81,5 +81,8 @@
     "url": "https://github.com/xaikodev/xai-ui/issues"
   },
   "homepage": "https://github.com/xaikodev/xai-ui#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
+  }
 }
